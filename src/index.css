@@ -1,0 +1,24 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* Tailwind base reset */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply global font and default colors */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000; /* ensure black background */
+  color: white;
+}
+
+/* Enable smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for a cleaner look (optional) */
+body::-webkit-scrollbar {
+  display: none;
+}
