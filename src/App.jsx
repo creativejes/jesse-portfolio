@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import { motion } from 'framer-motion';
 import Projects from './components/Projects';
 import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -41,27 +42,22 @@ function App() {
       {/* Projects Section */}
       <Projects />
 
-      {/* Contact */}
+      {/* Contact Section */}
       <section id="contact" className="py-24 px-6 max-w-md mx-auto text-center">
         <h2 className="text-2xl font-semibold uppercase tracking-widest mb-8">Contact</h2>
         <p className="text-gray-400 mb-4">Got a project, idea, or opportunity?</p>
-        <a
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
           href="mailto:jesse@example.com"
           className="inline-block px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded"
         >
           Let’s Talk
-        </a>
+        </motion.a>
       </section>
 
       {/* Footer */}
-      <footer className="py-12 text-center text-gray-500 text-sm">
-        <div className="flex justify-center space-x-6 mb-4">
-          <a href="https://github.com/jesse-dev" className="hover:text-white">GitHub</a>
-          <a href="https://linkedin.com/in/jesse" className="hover:text-white">LinkedIn</a>
-          <a href="mailto:jesse@example.com" className="hover:text-white">Email</a>
-        </div>
-        <p>© 2025 Jesse. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
