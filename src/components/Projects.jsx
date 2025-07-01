@@ -10,18 +10,20 @@ const projects = [
   {
     title: 'Complaint Logging System',
     description: 'A campus-based maintenance complaint system using Django + React.',
-    stack: ['Html5', 'Django', 'Tailwind CSS'],
+    stack: ['HTML5', 'Django', 'Tailwind CSS'],
     image: project1,
-    github: 'https://github.com/yourusername/complaint-system',
-    live: 'https://yourapp.vercel.app'
+    github: 'https://github.com/creativejes/complaint-system',
+    live: '', //  No live link yet
+    disabled: true
   },
   {
-    title: 'Portfolio website',
+    title: 'Portfolio Website',
     description: 'A visual and technical snapshot of my work in motion.',
-    stack: ['React', 'vite', 'Framer Motion'],
+    stack: ['React', 'Vite', 'Framer Motion'],
     image: project2,
-    github: 'https://github.com/yourusername/ai-code-reviewer',
-    live: 'https://aicode.vercel.app'
+    github: 'https://github.com/creativejes/jesse-portfolio',
+    live: 'https://jesse-portfolion-1.vercel.app/',
+    disabled: false
   }
 ];
 
@@ -52,9 +54,16 @@ export default function Projects() {
                 <a href={project.github} target="_blank" rel="noreferrer">
                   <FaGithub className="text-2xl hover:text-blue-500" />
                 </a>
-                <a href={project.live} target="_blank" rel="noreferrer">
-                  <FaExternalLinkAlt className="text-2xl hover:text-blue-500" />
-                </a>
+                {!project.disabled && (
+                  <a href={project.live} target="_blank" rel="noreferrer">
+                    <FaExternalLinkAlt className="text-2xl hover:text-blue-500" />
+                  </a>
+                )}
+                {project.disabled && (
+                  <span className="text-gray-600 text-2xl cursor-not-allowed" title="Live link not available">
+                    <FaExternalLinkAlt />
+                  </span>
+                )}
               </div>
             </div>
             <div className="md:w-1/2">

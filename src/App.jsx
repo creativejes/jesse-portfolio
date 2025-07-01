@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Projects from './components/Projects';
 import About from './components/About';
 import Footer from './components/Footer';
+import Security from './components/Security';
+
 
 function App() {
   return (
@@ -24,7 +26,7 @@ function App() {
         <div className="relative z-10">
           <p className="text-gray-400 tracking-widest text-sm">HELLO! I’M</p>
           <h1 className="text-6xl md:text-8xl font-extrabold tracking-widest uppercase">JESSE</h1>
-          <p className="text-gray-500 mt-2">Fullstack Developer • Builder • Problem Solver</p>
+          <p className="text-gray-500 mt-2">Fullstack Developer • GenAI Explorer • Passionate About Cybersecurity</p>
 
           <motion.div
             animate={{ y: [0, 10, 0] }}
@@ -41,6 +43,10 @@ function App() {
 
       {/* Projects Section */}
       <Projects />
+      
+      {/* Security Section */}
+      <Security />    
+
 
       {/* Contact Section */}
       <section id="contact" className="py-24 px-6 max-w-md mx-auto text-center">

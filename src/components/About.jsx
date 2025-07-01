@@ -32,7 +32,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-gray-400 leading-relaxed">
-            I'm Jesse — a hybrid technologist passionate about building useful and secure digital tools. My journey spans IT infrastructure, fullstack development, and GenAI innovation.
+            I’ve always been drawn to the challenge of building things that not only work — but work securely. I’m Jesse, a developer blending fullstack skills with a deep interest in cybersecurity and GenAI.
           </p>
           <p className="text-gray-500 mt-4 italic">
             Let’s build something great together.
