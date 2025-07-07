@@ -14,7 +14,7 @@ const projects = [
     image: project1,
     github: 'https://github.com/creativejes/CMS',
     live: 'https://complaint-management-system-p4f8.onrender.com', 
-    disabled: true
+    disabled: false
   },
   {
     title: 'Portfolio Website',
