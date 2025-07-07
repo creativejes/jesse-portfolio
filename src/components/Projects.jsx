@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
-// ✅ Import project images properly
+//  Import project images properly
 import project1 from '../assets/project1.png';
 import project2 from '../assets/project2.png';
 
@@ -12,8 +12,8 @@ const projects = [
     description: 'A campus-based maintenance complaint system using Django + React.',
     stack: ['HTML5', 'Django', 'Tailwind CSS'],
     image: project1,
-    github: 'https://github.com/creativejes/complaint-system',
-    live: '', //  No live link yet
+    github: 'https://github.com/creativejes/CMS',
+    live: 'https://complaint-management-system-p4f8.onrender.com', 
     disabled: true
   },
   {
