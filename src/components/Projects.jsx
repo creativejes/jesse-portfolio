@@ -9,7 +9,7 @@ import project2 from '../assets/project2.png';
 const projects = [
   {
     title: 'Complaint Logging System',
-    description: 'A campus-based maintenance complaint system using Django + React.',
+    description: 'A campus-based maintenance complaint system using Django + html5 + css.',
     stack: ['HTML5', 'Django', 'Tailwind CSS'],
     image: project1,
     github: 'https://github.com/creativejes/CMS',
